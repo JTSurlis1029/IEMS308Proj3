@@ -168,8 +168,7 @@ dat_ceo.drop(['typ'],axis = 1,inplace = True)
 dat_comp.drop(['typ'],axis = 1,inplace = True)
 
 dat_ceo = dat_ceo[dat_ceo['lem'] == 1]
-dat_prc = dat_prc[dat_prc['lem'] == 1]
-dat_comp = dat_comp[dat_comp['lem'] == 1]
+
 
 ceo_d = pd.concat([dat_ceo,dat_t],ignore_index = True)
 comp_d = pd.concat([dat_comp,dat_t],ignore_index = True)
